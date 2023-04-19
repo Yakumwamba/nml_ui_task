@@ -29,7 +29,7 @@ export default function Footer() {
 
       <div className='flex flex-col items-center justify-center hover:cursor-pointer '>
         <Link
-          href='/tickets'
+          href='/TicketsScreen'
           onClick={() => {
             console.log('clicked');
             setactive(true);

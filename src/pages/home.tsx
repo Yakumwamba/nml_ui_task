@@ -1,6 +1,6 @@
 /* eslint-disable react/jsx-no-undef */
 import Image from 'next/image';
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 
 import AvailableDates from '@/components/AvailableDates';
 import Search from '@/components/icons/search';
@@ -8,9 +8,19 @@ import Layout from '@/components/layout/Layout';
 import PassengerTreats from '@/components/PassengerTreats';
 import PeopleCounter from '@/components/PeopleCounter';
 import Seo from '@/components/Seo';
+import SplashScreen from '@/components/splash';
 
-export default function home() {
-  return (
+export default function Home() {
+  const [load, setLoading] = useState(true);
+  useEffect(() => {
+    setTimeout(() => {
+      setLoading(false);
+    }, 2000);
+  }, []);
+
+  return load ? (
+    <SplashScreen></SplashScreen>
+  ) : (
     <Layout>
       {/* <Seo templateTitle='Home' /> */}
       <Seo />

@@ -19,7 +19,7 @@ export default function landing() {
             className=' h-16 w-96 rounded-md border-green-500  bg-white font-semibold  text-gray-100'
           />
           <div className='mx-10 mb-12 mt-12 flex w-56 flex-row items-center justify-center self-start rounded-lg bg-[#199675] hover:cursor-pointer'>
-            <Link href='/home'>
+            <Link href='/VerifyNumber'>
               {' '}
               <p className='p-4 text-lg font-semibold text-white'>Book now</p>
             </Link>

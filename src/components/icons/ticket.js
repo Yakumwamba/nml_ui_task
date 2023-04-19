@@ -3,12 +3,11 @@ import React from 'react';
 export default function Ticket({ width, height, fill }) {
   return (
     <svg
-      width={width}
-      height={height}
+      width='32'
+      height='38'
       viewBox='0 0 32 38'
       fill='none'
       xmlns='http://www.w3.org/2000/svg'
-      s
     >
       <g opacity='0.3'>
         <path
