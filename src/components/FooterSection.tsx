@@ -5,28 +5,28 @@ import ArrowIcon from '@/components/icons/ArrowIcon';
 import LogoIcon from '@/components/icons/LogoIcon';
 export default function FooterSection() {
   return (
-    <section className='bottom-0 h-auto w-full bg-[#21202B]'>
-      <div className='flex h-auto w-auto justify-between pt-32 sm:mx-12 sm:flex-col sm:items-start lg:ml-56 lg:mr-52 lg:flex-row lg:items-start lg:align-top '>
-        <div className='flex flex-col justify-start gap-2 sm:items-center sm:self-center lg:mt-2 lg:items-start'>
-          <div className='flex pb-12'>
+    <section className='bottom-0  h-auto w-full bg-[#21202B]'>
+      <div className='lg:align-center mt-16 flex h-auto w-auto justify-between sm:mx-12 sm:flex-col sm:items-start lg:ml-56 lg:mr-52 lg:flex-row lg:items-center '>
+        <div className='flex flex-col justify-start gap-2 sm:items-center sm:self-center lg:mt-2 lg:items-start lg:self-start'>
+          <div className='mb-5 mt-10 flex scale-75'>
             <LogoIcon />
           </div>
 
-          <p className='font-notoserif pb-10 text-xl text-white'>
+          <p className='font-notoserif mb-3 text-xl text-white'>
             Our newsletter
           </p>
           <p className='font-KumbhSans w-56 text-lg text-white  sm:text-center lg:text-start'>
             Sign up to stay informed about what we do
           </p>
 
-          <div className='flex w-auto flex-row items-center gap-1 pb-10 pt-10 hover:cursor-pointer  '>
+          <div className='mb-10 mt-10 flex w-auto flex-row items-center justify-center gap-5 align-middle hover:cursor-pointer  '>
             <p className='text-xl text-[#FF7876]'>Sign up</p>
             <ArrowIcon />
           </div>
         </div>
 
-        <div className='flex flex-col gap-2 sm:my-5 sm:items-center sm:justify-center sm:self-center'>
-          <p className='font-notoserif pb-8 text-xl font-medium text-white '>
+        <div className='flex flex-col gap-2 sm:my-5 sm:items-center sm:justify-center sm:self-center lg:items-start'>
+          <p className='font-notoserif mb-3 text-xl font-medium text-white '>
             Main Menu
           </p>
           <p className=' font-KumbhSans text-lg font-normal  text-white'>
@@ -43,8 +43,8 @@ export default function FooterSection() {
           </p>
         </div>
 
-        <div className='flex flex-col gap-2 sm:my-5  sm:items-center sm:self-center'>
-          <p className='font-notoserif pb-8 text-xl font-medium text-white  '>
+        <div className='flex flex-col gap-2 sm:my-5 sm:items-center  sm:self-center lg:items-start'>
+          <p className='font-notoserif mb-3 text-xl font-medium text-white  '>
             Quick Links
           </p>
           <p className=' font-KumbhSans font-normal text-white sm:text-lg'>
@@ -61,7 +61,7 @@ export default function FooterSection() {
           </p>
         </div>
 
-        <div className='item-start relative flex flex-col  sm:my-20 sm:self-center'>
+        <div className='item-start relative flex flex-col  sm:mt-20  sm:self-center lg:mt-5 lg:self-end'>
           <div className='absolute -right-1/2  bottom-56 left-3/4   z-10'>
             <Image
               src='/images/signup_arrow.png'
@@ -78,7 +78,7 @@ export default function FooterSection() {
               <p className=' mx-5 p-10 text-base text-white'>Sign up</p>
             </div>
           </div>
-          <div className='mt-9 flex flex-row gap-6'>
+          <div className='mt-9 flex flex-row gap-6 sm:self-center'>
             <div className='flex h-10 w-10 items-center justify-center rounded-full bg-white hover:cursor-pointer'>
               <Image
                 src='/images/facebook.png'
