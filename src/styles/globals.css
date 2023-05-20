@@ -2,30 +2,27 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: "NotoSerif";
+  src: url("../../public/fonts/NotoSerif-Bold.ttf");
+}
+@font-face {
+  font-family: "Poppins";
+  font-weight: 100 700;
+  src: url("../../public/fonts/Poppins-Regular.ttf");
+}
+@font-face {
+  font-family: "Poppins-bold";
+  font-weight: 100 700;
+  src: url("../../public/fonts/Poppins-Bold.ttf");
+}
+@font-face {
+  font-family: "KumbhSans";
+  src: url("../../public/fonts/KumbhSans-Regular.ttf");
+}
+
 :root {
-  /* #region  /**=========== Primary Color =========== */
-  /* !STARTERCONF Customize these variable, copy and paste from /styles/colors.css for list of colors */
-  --tw-color-primary-50: 240 249 255;
-  --tw-color-primary-100: 224 242 254;
-  --tw-color-primary-200: 186 230 253;
-  --tw-color-primary-300: 125 211 252;
-  --tw-color-primary-400: 56 189 248;
-  --tw-color-primary-500: 14 165 233;
-  --tw-color-primary-600: 2 132 199;
-  --tw-color-primary-700: 3 105 161;
-  --tw-color-primary-800: 7 89 133;
-  --tw-color-primary-900: 12 74 110;
-  --color-primary-50: rgb(var(--tw-color-primary-50)); /* #f0f9ff */
-  --color-primary-100: rgb(var(--tw-color-primary-100)); /* #e0f2fe */
-  --color-primary-200: rgb(var(--tw-color-primary-200)); /* #bae6fd */
-  --color-primary-300: rgb(var(--tw-color-primary-300)); /* #7dd3fc */
-  --color-primary-400: rgb(var(--tw-color-primary-400)); /* #38bdf8 */
-  --color-primary-500: rgb(var(--tw-color-primary-500)); /* #0ea5e9 */
-  --color-primary-600: rgb(var(--tw-color-primary-600)); /* #0284c7 */
-  --color-primary-700: rgb(var(--tw-color-primary-700)); /* #0369a1 */
-  --color-primary-800: rgb(var(--tw-color-primary-800)); /* #075985 */
-  --color-primary-900: rgb(var(--tw-color-primary-900)); /* #0c4a6e */
-  /* #endregion  /**======== Primary Color =========== */
+
 }
 
 @layer base {
@@ -41,9 +38,7 @@
       U+2215, U+FEFF, U+FFFD;
   }
 
-  .cursor-newtab {
-    cursor: url('/images/new-tab.png') 10 10, pointer;
-  }
+
 
   /* #region  /**=========== Typography =========== */
   .h0 {
@@ -114,5 +109,42 @@
   .animated-underline:hover,
   .animated-underline:focus-visible {
     background-size: 0 2px, 100% 2px;
+  }
+}
+
+.square {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  background-color: red;
+  display: flex;
+  justify-content: center;
+}
+
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  margin: 0 auto;
+  max-width: 1000px;
+}
+
+.grid-item {
+  padding: 10px;
+  border: 1px solid black;
+}
+
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media (max-width: 576px) {
+  .grid {
+    grid-template-columns: none;
+    display: flex;
+    justify-content: space-between;
   }
 }
