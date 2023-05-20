@@ -7,7 +7,7 @@ export default function ImageGallerySection() {
   return (
     <section className='flex h-auto w-full flex-col  items-start self-start bg-white'>
       {/* Image Gallery Text */}
-      <div className='mr-10 flex w-auto gap-6 pb-20 pt-44 sm:ml-10 sm:scale-95 sm:flex-col sm:items-start lg:mx-52 lg:flex-row lg:items-center'>
+      <div className='mr-10 flex w-auto gap-6 pb-24 pt-44 sm:ml-10 sm:scale-95 sm:flex-col sm:items-start lg:mx-52 lg:flex-row lg:items-center'>
         <ImageGalleryIcon />
         <p className=' font-poppins-bold text-5xl font-bold text-black '>
           Image gallery
@@ -17,8 +17,8 @@ export default function ImageGallerySection() {
       {/* Grid */}
       <div className=' flex h-auto justify-between sm:w-full sm:flex-col lg:w-full lg:flex-row lg:items-center lg:gap-10'>
         <div className=' flex h-auto flex-col  sm:w-full sm:gap-5 lg:w-1/2   lg:gap-10'>
-          <div className='flex flex-row justify-between gap-3 sm:w-full lg:w-auto'>
-            <div className=' relative flex  h-80 w-80 items-end   justify-center bg-[url("/images/image-grid.png")] '>
+          <div className='flex flex-row justify-between gap-5 sm:w-full lg:w-auto'>
+            <div className=' relative flex  h-80 items-end justify-center bg-[url("/images/image-grid.png")]   sm:w-full lg:w-80 '>
               <p className='absolute inset-10 mx-10 mb-2  flex items-end text-white opacity-0 duration-300 hover:cursor-pointer  hover:opacity-100 sm:text-center'>
                 Show text on hover
               </p>
@@ -26,7 +26,7 @@ export default function ImageGallerySection() {
                 <ArrowIconGallery />
               </div>
             </div>
-            <div className=' bg-green1 relative flex h-80 w-80 self-start bg-[url("/images/image-grid.png")] '>
+            <div className=' bg-green1 relative flex h-80 self-start bg-[url("/images/image-grid.png")] sm:w-full lg:w-80 '>
               <p className='absolute inset-10 mx-10 mb-2  flex items-end text-white opacity-0 duration-300 hover:cursor-pointer  hover:opacity-100 sm:text-center'>
                 Show text on hover
               </p>

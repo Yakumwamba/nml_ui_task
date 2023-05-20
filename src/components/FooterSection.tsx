@@ -1,13 +1,13 @@
+import Image from 'next/image';
 import React from 'react';
 
 import ArrowIcon from '@/components/icons/ArrowIcon';
 import LogoIcon from '@/components/icons/LogoIcon';
-
 export default function FooterSection() {
   return (
-    <section className='bottom-0 h-full w-full bg-[#21202B]'>
-      <div className='flex w-auto justify-between pt-32 sm:mx-12 sm:flex-col sm:items-start lg:ml-56 lg:mr-52 lg:flex-row lg:items-center '>
-        <div className='flex flex-col justify-start gap-2 sm:items-center sm:self-center lg:items-start'>
+    <section className='bottom-0 h-auto w-full bg-[#21202B]'>
+      <div className='flex h-auto w-auto justify-between pt-32 sm:mx-12 sm:flex-col sm:items-start lg:ml-56 lg:mr-52 lg:flex-row lg:items-start lg:align-top '>
+        <div className='flex flex-col justify-start gap-2 sm:items-center sm:self-center lg:mt-2 lg:items-start'>
           <div className='flex pb-12'>
             <LogoIcon />
           </div>
@@ -61,12 +61,40 @@ export default function FooterSection() {
           </p>
         </div>
 
-        <div className='flex h-56 w-56 flex-col items-center justify-center rounded-xl bg-[#FF7876] sm:my-20 sm:self-center'>
-          <p className='text-lg font-medium text-white'>Get</p>
-          <p className=' font-KumbhSans text-3xl text-white'>Involved</p>
+        <div className='item-start relative flex flex-col  sm:my-20 sm:self-center'>
+          <div className='absolute -right-1/2  bottom-56 left-3/4   z-10'>
+            <Image
+              src='/images/signup_arrow.png'
+              width={100}
+              height={83}
+              alt=''
+            />
+          </div>
+          <div className='flex h-56 w-56 flex-col items-center justify-center rounded-xl bg-[#FF7876]  sm:self-center'>
+            <p className='text-lg font-medium text-white'>Get</p>
+            <p className=' font-KumbhSans text-4xl text-white'>Involved</p>
 
-          <div className=' mt-6 flex h-16  w-auto items-center justify-center rounded-full border-2 border-white hover:cursor-pointer '>
-            <p className=' mx-5 p-10 text-base text-white'>Sign up</p>
+            <div className=' mt-6 flex h-16  w-auto items-center justify-center rounded-full border-2 border-white hover:cursor-pointer '>
+              <p className=' mx-5 p-10 text-base text-white'>Sign up</p>
+            </div>
+          </div>
+          <div className='mt-9 flex flex-row gap-6'>
+            <div className='flex h-10 w-10 items-center justify-center rounded-full bg-white hover:cursor-pointer'>
+              <Image
+                src='/images/facebook.png'
+                width={5}
+                height={12}
+                alt='twitter'
+              />
+            </div>
+            <div className='flex h-10 w-10 items-center justify-center rounded-full bg-black hover:cursor-pointer'>
+              <Image
+                src='/images/twitter.png'
+                width={16}
+                height={13}
+                alt='twitter'
+              />
+            </div>
           </div>
         </div>
       </div>
