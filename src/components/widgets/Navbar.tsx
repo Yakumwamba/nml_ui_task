@@ -9,16 +9,16 @@ const Navbar = () => {
           <LogoIcon />
         </a>
         <div className='flex flex-row items-center gap-16 sm:scale-0 lg:scale-100   '>
-          <a className='font-poppins h-4 w-12 font-normal text-white hover:cursor-pointer'>
+          <a className=' font-poppins h-4 w-12 font-normal text-white  duration-300 hover:scale-125 hover:cursor-pointer hover:text-[#FF00C7]'>
             Home
           </a>
-          <a className='font-poppins h-4 w-12 font-normal text-white hover:cursor-pointer'>
+          <a className='font-poppins h-4 w-12 font-normal text-white duration-300 hover:scale-125 hover:cursor-pointer hover:text-[#FF00C7]'>
             About
           </a>
-          <a className='font-poppins h-4 w-12 font-normal text-white hover:cursor-pointer'>
+          <a className='font-poppins h-4 w-12 font-normal text-white duration-300 hover:scale-125 hover:cursor-pointer hover:text-[#FF00C7]'>
             Services
           </a>
-          <a className='font-poppins h-4 w-12  font-normal text-white hover:cursor-pointer'>
+          <a className=' font-poppins h-4 w-12 font-normal  text-white duration-300 hover:scale-125  hover:cursor-pointer hover:text-[#FF00C7]'>
             Contact
           </a>
         </div>

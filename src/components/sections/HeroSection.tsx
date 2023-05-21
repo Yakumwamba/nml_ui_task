@@ -43,7 +43,7 @@ export default function HeroSection() {
     <section className='bottom-1 left-0 right-0  top-0 flex flex-col'>
       <div
         style={{ backgroundImage: `url(${images[activeIndex].url})` }}
-        className='  flex h-screen  w-full translate-x-0   flex-row bg-no-repeat  duration-700 ease-in-out  sm:bg-cover sm:bg-bottom lg:bg-cover    lg:bg-right '
+        className='   flex h-screen  w-full translate-x-0   flex-row bg-no-repeat  duration-700 ease-in-out  sm:bg-cover sm:bg-bottom lg:bg-cover    lg:bg-right '
       >
         <div className='absolute left-0 mx-5  flex h-20 w-20 items-center justify-center self-center rounded-full border border-black border-opacity-5 hover:cursor-pointer'>
           <ArrowLeft onClick={handlePreviousSlide} />

@@ -15,8 +15,8 @@ export default function OurNewsletter() {
         Sign up to stay informed about what we do
       </p>
 
-      <div className='mb-10 mt-10 flex w-auto flex-row items-center justify-center gap-5 align-middle hover:cursor-pointer  '>
-        <p className='text-xl text-[#FF7876]'>Sign up</p>
+      <div className=' mb-10 mt-10 flex w-auto flex-row items-center justify-center gap-5 align-middle hover:cursor-pointer  '>
+        <p className='hover:scale-115 text-xl text-[#FF7876] '>Sign up</p>
         <ArrowIcon />
       </div>
     </div>
