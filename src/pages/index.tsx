@@ -1,17 +1,17 @@
 import React from 'react';
 
-import AboutDesignSection from '@/components/AboutDesignSection';
-import FooterSection from '@/components/FooterSection';
-import HeroSection from '@/components/HeroSection';
-import ImageGalleryGrid from '@/components/ImageGallerySection';
-import Navbar from '@/components/Navbar';
+import AboutDesignSection from '@/components/sections/AboutDesignSection';
+import FooterSection from '@/components/sections/FooterSection';
+import HeroSection from '@/components/sections/HeroSection';
+import ImageGallerySection from '@/components/sections/ImageGallerySection';
+import Navbar from '@/components/widgets/Navbar';
 
 export default function Index() {
   return (
     <>
       <Navbar />
       <HeroSection />
-      <ImageGalleryGrid />
+      <ImageGallerySection />
       <AboutDesignSection />
       <FooterSection />
     </>

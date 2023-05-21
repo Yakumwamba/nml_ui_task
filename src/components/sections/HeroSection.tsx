@@ -1,5 +1,6 @@
 import React, { useEffect, useMemo, useState } from 'react';
 
+import PrimaryButton from '@/components/buttons/PrimaryButton';
 import ArrowLeft from '@/components/icons/ArrowLeftIcon';
 import ArrowRight from '@/components/icons/ArrowRightIcon';
 
@@ -39,7 +40,7 @@ export default function HeroSection() {
     }
   };
   return (
-    <section className='bottom-1 left-0 right-0  top-0 flex flex-col '>
+    <section className='bottom-1 left-0 right-0  top-0 flex flex-col'>
       <div
         style={{ backgroundImage: `url(${images[activeIndex].url})` }}
         className='  flex h-screen  w-full translate-x-0   flex-row bg-no-repeat  duration-700 ease-in-out  sm:bg-cover sm:bg-bottom lg:bg-cover    lg:bg-right '
@@ -55,11 +56,7 @@ export default function HeroSection() {
           <p className='font-poppins text-3xl font-normal text-white'>
             Main slide subheading
           </p>
-          <button className='flex h-16 w-44 items-center justify-center rounded-xl bg-[#00959E]'>
-            <p className=' w-28 text-center text-xl font-medium text-white hover:cursor-pointer'>
-              Button text
-            </p>
-          </button>
+          <PrimaryButton />
         </div>
         <div className='absolute right-0 mx-5  flex h-20 w-20 items-center justify-center self-center rounded-full border border-black border-opacity-5 hover:cursor-pointer '>
           <ArrowRight onClick={handleNextSlide} />

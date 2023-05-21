@@ -7,7 +7,7 @@ export default function ImageGallerySection() {
   return (
     <section className='flex h-auto w-full flex-col  items-start self-start bg-white'>
       {/* Image Gallery Text */}
-      <div className='mr-10 flex w-auto gap-6 pb-24 pt-44 sm:ml-10 sm:scale-95 sm:flex-col sm:items-start lg:mx-52 lg:flex-row lg:items-center'>
+      <div className='mr-10 flex w-auto gap-6 pb-24 pt-44 sm:ml-10 sm:scale-95 sm:flex-col sm:items-start md:ml-16 md:mr-16 lg:mx-52 lg:flex-row lg:items-center'>
         <ImageGalleryIcon />
         <p className=' font-poppins-bold text-5xl font-bold text-black '>
           Image gallery
